@@ -1,8 +1,8 @@
-let startButton = document.getElementById('start-btn')
-let nextButton = document.getElementById('next-btn')
-let questionContainerElement = document.getElementById('question-container')
-let questionElement = document.getElementById('question')
-let answerButtonsElement = document.getElementById('answer-buttons')
+const startButton = document.getElementById('start-btn')
+const nextButton = document.getElementById('next-btn')
+const questionContainerElement = document.getElementById('question-container')
+const questionElement = document.getElementById('question')
+const answerButtonsElement = document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -25,7 +25,7 @@ function setNextQuestion() {
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
-        let button = document.createElement('button')
+        const button = document.createElement('button')
         button.innerText = answer.text
         button.classList.add('btn')
         if (answer.correct) {
@@ -44,11 +44,11 @@ function resetState(){
 }
 
 function selectAnswer (e) {
-    let selectedButton = e.target
-    let correct = selectedButton.dataset.correct
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button.dataset.correct)
+        setStatusClass(button, button.dataset.correct)
     })
     nextButton.classList.remove('hide')
 }
