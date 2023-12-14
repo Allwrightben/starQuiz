@@ -1,1 +1,84 @@
-body {background-color: blue;}
+*,*::before, *::after {
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+body {
+    background-image: url('../images/starbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    vertical-align: auto;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.header {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 5vh;
+    max-height: 25%;
+}
+
+.container {
+    height: 50%;
+    width: 60%;
+    border-radius: 50px;
+    background-color: ivory;
+    margin-left: 20%;
+    box-shadow: 0 0 10px 2px;
+    padding: 10px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+.btn {
+    background-color: lightblue;
+    border: 2px solid lightblue ;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 1px;
+}
+
+.btn.correct {
+    background-color: green;
+    border-color: green;
+}
+
+.btn.wrong {
+    background-color: red;
+    border-color: red;
+}
+
+.btn:hover {
+    border-color:black ;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.starquiz {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 10vh;
+}
