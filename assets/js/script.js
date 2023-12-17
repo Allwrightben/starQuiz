@@ -54,7 +54,16 @@ function selectAnswer (e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
+    if (correct) {
+        score++;
+        document.getElementById('score').innerText = 'Score: ' + score;
+    }
+    if (shuffledQuestions.length > currentQuestionIndex +1) {
     nextButton.classList.remove('hide')
+    } else {
+        startButton.innerText ='Restart'
+        startButton.classList.remove('hide')
+    }
 }
 
 function setStatusClass(element, correct) {
@@ -70,6 +79,8 @@ function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
+
+let score = 0;
 
 let questions = [
     {

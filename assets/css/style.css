@@ -80,6 +80,12 @@ body {
     display: none;
 }
 
+.score-area {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 .starquiz {
     color: whitesmoke;
     text-align: center;
