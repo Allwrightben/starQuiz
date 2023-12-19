@@ -3,10 +3,12 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const scoreArea = document.getElementById('scoreArea');
 const openButton = document.querySelector("[data-open-modal]")
 const closeButton = document.querySelector("[data-close-modal]")
 const modal = document.querySelector("[data-modal]")
 let totalQuestions = 10;
+let score = 0;
 
 openButton.addEventListener('click', () => {
     modal.showModal()
@@ -38,6 +40,7 @@ function startGame() {
     //sets number of questions left back to 10 and displays it
     totalQuestions = 10;
     document.getElementById('question-count').innerText = 'Questions left: ' + totalQuestions;
+    scoreArea.classList.remove('hide')
     //hides the start button after the game has started
     startButton.classList.add('hide')
     //shuffles through questions to make the quiz different everytime.
@@ -81,7 +84,10 @@ function resetState(){
 function selectAnswer (e) {
     const selectedButton = e.target
     totalQuestions--;
-   document.getElementById('question-count').innerText = 'Questions left: ' + totalQuestions;
+    document.getElementById('question-count').innerText = 'Questions left: ' + totalQuestions;
+    Array.from(answerButtonsElement.children).forEach(button => {
+        button.disabled = true;
+    });
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
@@ -89,7 +95,7 @@ function selectAnswer (e) {
     })
     if (correct) {
         score++;
-        document.getElementById('score').innerText = 'Score: ' + score;
+        document.getElementById('score').innerText = 'Score: ' + score + '/10';
     }
     if (shuffledQuestions.length > currentQuestionIndex +1) {
     nextButton.classList.remove('hide')
@@ -112,8 +118,6 @@ function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
-
-let score = 0;
 
 let questions = [
     {
