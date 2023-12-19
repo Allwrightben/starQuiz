@@ -32,9 +32,13 @@ nextButton.addEventListener('click', () => {
  */
 
 function startGame() {
+    score = 0;
+    document.getElementById('score').innerText = 'Score: ' + score;
     startButton.classList.add('hide')
     shuffledQuestions = questions.sort(() => Math.random() - .5)
+    shuffledQuestions = shuffledQuestions.slice(0, 10)
     currentQuestionIndex = 0
+    document.getElementById('question-count').innerText = 'Questions left: ' + shuffledQuestions.length;
     questionContainerElement.classList.remove('hide')
     setNextQuestion()
 }
@@ -68,6 +72,7 @@ function resetState(){
 function selectAnswer (e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
+    document.getElementById('question-count').innerText = 'Questions left: ' + (shuffledQuestions.length - 1);
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
@@ -77,6 +82,8 @@ function selectAnswer (e) {
         document.getElementById('score').innerText = 'Score: ' + score;
     }
     if (shuffledQuestions.length > currentQuestionIndex +1) {
+        shuffledQuestions.splice(currentQuestionIndex, 1)
+        document.getElementById('question-count').innerText = 'Questions left: ' + shuffledQuestions.length;
     nextButton.classList.remove('hide')
     } else {
         startButton.innerText ='Restart'

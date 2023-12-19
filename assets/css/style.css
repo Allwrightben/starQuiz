@@ -35,7 +35,7 @@ body {
 .container {
     height: fit-content;
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 50px;
     background-color: whitesmoke; 
     box-shadow: 0 0 10px 2px;
@@ -70,7 +70,8 @@ body {
 }
 
 .btn:hover {
-    border-color:black ;
+    border-color:black;
+    cursor: pointer;
 }
 
 .start-btn, .next-btn {
