@@ -6,6 +6,7 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 const openButton = document.querySelector("[data-open-modal]")
 const closeButton = document.querySelector("[data-close-modal]")
 const modal = document.querySelector("[data-modal]")
+let totalQuestions = 10;
 
 openButton.addEventListener('click', () => {
     modal.showModal()
@@ -30,16 +31,24 @@ nextButton.addEventListener('click', () => {
  * current question index to 0, shows the question container, 
  * and sets the next question.
  */
-
 function startGame() {
+    //sets score to 0 and desplays it
     score = 0;
-    document.getElementById('score').innerText = 'Score: ' + score;
+    document.getElementById('score').innerText = 'Score:' + score;
+    //sets number of questions left back to 10 and displays it
+    totalQuestions = 10;
+    document.getElementById('question-count').innerText = 'Questions left: ' + totalQuestions;
+    //hides the start button after the game has started
     startButton.classList.add('hide')
+    //shuffles through questions to make the quiz different everytime.
     shuffledQuestions = questions.sort(() => Math.random() - .5)
+    //give 10 random questions from available questions
     shuffledQuestions = shuffledQuestions.slice(0, 10)
+    //set question index to 0
     currentQuestionIndex = 0
-    document.getElementById('question-count').innerText = 'Questions left: ' + shuffledQuestions.length;
+    //displays questions after the game starts
     questionContainerElement.classList.remove('hide')
+    //chooses the 1st/next question
     setNextQuestion()
 }
 
@@ -71,8 +80,9 @@ function resetState(){
 
 function selectAnswer (e) {
     const selectedButton = e.target
+    totalQuestions--;
+   document.getElementById('question-count').innerText = 'Questions left: ' + totalQuestions;
     const correct = selectedButton.dataset.correct
-    document.getElementById('question-count').innerText = 'Questions left: ' + (shuffledQuestions.length - 1);
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
@@ -82,8 +92,6 @@ function selectAnswer (e) {
         document.getElementById('score').innerText = 'Score: ' + score;
     }
     if (shuffledQuestions.length > currentQuestionIndex +1) {
-        shuffledQuestions.splice(currentQuestionIndex, 1)
-        document.getElementById('question-count').innerText = 'Questions left: ' + shuffledQuestions.length;
     nextButton.classList.remove('hide')
     } else {
         startButton.innerText ='Restart'
