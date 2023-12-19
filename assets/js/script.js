@@ -3,17 +3,35 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const openButton = document.querySelector("[data-open-modal]")
+const closeButton = document.querySelector("[data-close-modal]")
+const modal = document.querySelector("[data-modal]")
+
+openButton.addEventListener('click', () => {
+    modal.showModal()
+})
+
+closeButton.addEventListener('click', () => {
+    modal.close()
+})
 
 let shuffledQuestions, currentQuestionIndex
 
+//event listeners for the start and next buttons. 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 })
 
+/**
+ * The startGame function is responsible for starting the game. 
+ * It hides the start button, shuffles the questions, sets the 
+ * current question index to 0, shows the question container, 
+ * and sets the next question.
+ */
+
 function startGame() {
-    console.log('start the bloody game')
     startButton.classList.add('hide')
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
@@ -93,7 +111,7 @@ let questions = [
         ]
     },
     {
-        question: 'What colour was Mace Windos light saber?',
+        question: "What colour was Mace Windo's light saber?",
         answers: [
             {text: 'Orange', correct: false},
             {text: 'Green', correct: false},
@@ -122,7 +140,7 @@ let questions = [
         ]
     },
     {
-        question: 'Who is Lukes father?',
+        question: "Who is Luke's father?",
         answers: [
             {text: 'Mace Windo', correct: false},
             {text: 'Anakin', correct: true},
@@ -132,7 +150,7 @@ let questions = [
         ]
     },
     {
-        question: 'In Episode 4, what crucial secret does R2-D2 carry in its memory?',
+        question: 'In Episode 4, what crucial secret does R2-D2 carry in his memory?',
         answers: [
             {text: 'A love letter to C3PO', correct: false},
             {text: 'Darth Vaders true identity', correct: false},
@@ -162,7 +180,7 @@ let questions = [
         ]
     },
     {
-        question: 'Who was Darth Vaders apprentice?',
+        question: "Who was Darth Vader's apprentice?",
         answers: [
             {text: 'Ahsoka', correct: true},
             {text: 'Starkiller', correct: false},
@@ -172,12 +190,22 @@ let questions = [
         ]
     },
     {
-        question: 'Who was count Dookus Master?',
+        question: "Who was count Dooku's Master?",
         answers: [
             {text: 'Qui-gon', correct: false},
             {text: 'Exar Kun', correct: false},
             {text: 'Mace Windo', correct: false},
             {text: 'Yoda', correct: true},
+            
+        ]
+    },
+    {
+        question: "BONUS QUESTION: Who was the apprentice of Darth Plagueis the wise?",
+        answers: [
+            {text: 'Darth Sideous', correct: true},
+            {text: 'The Emperor', correct: true},
+            {text: 'Senator Palpatine', correct: true},
+            {text: 'Sheev', correct: true},
             
         ]
     },

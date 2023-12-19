@@ -21,35 +21,53 @@
 </head>
 
 <body>
-    <h1 class="header">
-        The most wretched quiz of scum and villainy in all the galaxy.
-    </h1>
+    <header>
+        <h1 class="header">
+            The most wretched quiz of scum and villainy in all the galaxy.
+        </h1>
+    </header>
 
-    <section class="container">
+    <main>
 
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+        <button data-open-modal class="rules btn">?Rules?</button>
+        <dialog data-modal>
+            <div>
+                <h2>Rules:</h2>
+                You will receive 1 point for each correct answer.<br>
+                you will have 10 random questions to answer.<br>
+                you can score a total of 10 points.
+
+                <h4>The questions are diffrent everytime 
+                    so feel free to try again.</h4>
             </div>
-        </div>
+            <button data-close-modal>Close</button>
+        </dialog>
 
-        <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="next-btn" class="next-btn btn hide">Next</button>
-        </div>
+        <section class="container">
+            <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
 
-        <div class="score-area">
-            <p id="score">Score: 0</p>
-            <p>/10</p>
-        </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div>
 
-    </section>
+            <div class="score-area">
+                <p id="score">Score: 0</p>
+                <p>/10</p>
+            </div>
 
-    <h1 class="starquiz">sTaR qUiz</h1>
+        </section>
+    </main>
+
+    <footer class="starquiz">sTaR qUiz</footer>
 
     <script src="assets/js/script.js"></script>
 </body>
