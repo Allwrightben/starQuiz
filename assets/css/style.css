@@ -27,7 +27,7 @@ body {
 
 .rules {
     position: absolute;
-    top: 50%;
+    top: 10%;
     right: 5px;
     font-weight: bolder;
 }
@@ -85,14 +85,14 @@ body {
     align-items: center;
 }
 
-.hide {
-    display: none;
-}
-
 .score-area {
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+.hide {
+    display: none;
 }
 
 .starquiz {

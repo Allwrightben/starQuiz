@@ -144,7 +144,7 @@ let questions = [
         answers: [
             {text: 'Mace Windo', correct: false},
             {text: 'Anakin', correct: true},
-            {text: 'Darth Vader', correct: true},
+            {text: 'Qui-gon', correct: false},
             {text: 'C3PO', correct: false},
             
         ]
@@ -200,11 +200,11 @@ let questions = [
         ]
     },
     {
-        question: "BONUS QUESTION: Who was the apprentice of Darth Plagueis the wise?",
+        question: "Who was the apprentice of Darth Plagueis the wise?",
         answers: [
-            {text: 'Darth Sideous', correct: true},
-            {text: 'The Emperor', correct: true},
-            {text: 'Senator Palpatine', correct: true},
+            {text: 'Mace Windo', correct: false},
+            {text: 'Boba Fett', correct: false},
+            {text: 'Stuart Crang', correct: false},
             {text: 'Sheev', correct: true},
             
         ]
