@@ -64,12 +64,12 @@ body {
 }
 
 .btn.correct {
-    background-color: green;
+    background-color: lightgreen;
     border-color: green;
 }
 
 .btn.wrong {
-    background-color: red;
+    background-color: pink;
     border-color: red;
 }
 
