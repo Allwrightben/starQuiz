@@ -76,6 +76,7 @@ function showQuestion(question) {
 
 function resetState(){
     nextButton.classList.add('hide')
+    answerButtonsElement.classList.remove('disbtn')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
@@ -86,7 +87,7 @@ function selectAnswer (e) {
     totalQuestions--;
     document.getElementById('question-count').innerText = 'Questions left: ' + totalQuestions;
     Array.from(answerButtonsElement.children).forEach(button => {
-        button.disabled = true;
+        answerButtonsElement.classList.add('disbtn')
     });
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
@@ -103,9 +104,9 @@ function selectAnswer (e) {
         if (score >= 8) {
             alert('Congratulations! You scored ' + score + ' out of 10. You did great!');
         } else if (score >= 6) {
-            alert('You scored ' + score + ' out of 10. You did well, keep trying!');
+            alert('You scored ' + score + ' out of 10. You did well, try again!');
         } else {
-            alert('You scored ' + score + ' out of 10. Keep practicing and you will do better next time!');
+            alert('You scored ' + score + ' out of 10. Better luck next time!');
         }
         startButton.innerText ='Restart'
         startButton.classList.remove('hide')
@@ -286,7 +287,7 @@ let questions = [
         ]
     },
     {
-        question: "Rey was revealed to be the granddaughter of which who?",
+        question: "Rey was revealed to be the granddaughter of who?",
         answers: [
             {text: 'Jack Shoebridge', correct: false},
             {text: 'Obi-Wan Kenobi', correct: false},
@@ -316,7 +317,7 @@ let questions = [
         ]
     },
     {
-        question: "Mandalorians often use this what line?",
+        question: "Mandalorians often use this line?",
         answers: [
             {text: '"There can be only two"', correct: false},
             {text: '"Control the controlables"', correct: false},
