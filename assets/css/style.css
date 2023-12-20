@@ -30,6 +30,10 @@ body {
     top: 10%;
     right: 5px;
     font-weight: bolder;
+    width: 5%;
+    height: 5%;
+    font-size: 150%;
+    font-weight: bolder;
 }
 
 .container {

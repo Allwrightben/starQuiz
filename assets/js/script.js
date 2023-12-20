@@ -100,6 +100,13 @@ function selectAnswer (e) {
     if (shuffledQuestions.length > currentQuestionIndex +1) {
     nextButton.classList.remove('hide')
     } else {
+        if (score >= 8) {
+            alert('Congratulations! You scored ' + score + ' out of 10. You did great!');
+        } else if (score >= 6) {
+            alert('You scored ' + score + ' out of 10. You did well, keep trying!');
+        } else {
+            alert('You scored ' + score + ' out of 10. Keep practicing and you will do better next time!');
+        }
         startButton.innerText ='Restart'
         startButton.classList.remove('hide')
     }
@@ -212,7 +219,7 @@ let questions = [
         question: "Who was count Dooku's Master?",
         answers: [
             {text: 'Qui-gon', correct: false},
-            {text: 'Exar Kun', correct: false},
+            {text: 'Jordan White', correct: false},
             {text: 'Mace Windo', correct: false},
             {text: 'Yoda', correct: true},
             
@@ -224,7 +231,97 @@ let questions = [
             {text: 'Mace Windo', correct: false},
             {text: 'Boba Fett', correct: false},
             {text: 'Stuart Crang', correct: false},
-            {text: 'Sheev', correct: true},
+            {text: 'Sheev palpatine', correct: true},
+            
+        ]
+    },
+    {
+        question: "In which movie did Princess Leia wear the infamous gold bikini?",
+        answers: [
+            {text: 'Episode 2', correct: false},
+            {text: 'Episode 4', correct: false},
+            {text: 'Episode 6', correct: true},
+            {text: 'Episode 8', correct: false},
+            
+        ]
+    },
+    {
+        question: "What was Obi-Wan Kenobi's relationship to Luke Skywalker?",
+        answers: [
+            {text: "Luke's second cousin on his mothers side twice removed", correct: false},
+            {text: 'A jedi talent scout', correct: false},
+            {text: 'He was a mentor to his father', correct: true},
+            {text: 'His uncle', false: false},
+            
+        ]
+    },
+    {
+        question: "Luke Skywalker lost which body part in “Episode IV: The Empire Strikes Back",
+        answers: [
+            {text: 'His down-stairs mix-up', correct: false},
+            {text: 'His head', correct: false},
+            {text: 'His leg', correct: false},
+            {text: 'His hand', correct: true},
+            
+        ]
+    },
+    {
+        question: "Who ordered that Han Solo be frozen in carbonite?",
+        answers: [
+            {text: 'Adam Yule', correct: false},
+            {text: 'Boba Fett', correct: false},
+            {text: 'Jabba the Hutt', correct: false},
+            {text: 'Darth Vader', correct: true},
+            
+        ]
+    },
+    {
+        question: "Who did R2-D2 not work with over the course of the nine films?",
+        answers: [
+            {text: 'Admiral Akbar', correct: true},
+            {text: 'Luke Skywalker', correct: false},
+            {text: 'Queen Amadala', correct: false},
+            {text: 'Rey', correct: false},
+            
+        ]
+    },
+    {
+        question: "Rey was revealed to be the granddaughter of which who?",
+        answers: [
+            {text: 'Jack Shoebridge', correct: false},
+            {text: 'Obi-Wan Kenobi', correct: false},
+            {text: 'The Emperor', correct: true},
+            {text: 'Han Solo', correct: false},
+            
+        ]
+    },
+    {
+        question: "What is Kylo Ren's real name?",
+        answers: [
+            {text: 'Ben Organa', correct: false},
+            {text: 'Ben Kenobi', correct: false},
+            {text: 'Ben Skywalker', correct: false},
+            {text: 'Ben Solo', correct: true},
+            
+        ]
+    },
+    {
+        question: "What is the real name of Baby yoda?",
+        answers: [
+            {text: 'Fred', correct: false},
+            {text: 'Grogu', correct: true},
+            {text: 'Goku', correct: false},
+            {text: 'Gollum', correct: false},
+            
+        ]
+    },
+    {
+        question: "Mandalorians often use this what line?",
+        answers: [
+            {text: '"There can be only two"', correct: false},
+            {text: '"Control the controlables"', correct: false},
+            {text: '"May the force be with you"', correct: false},
+            {text: '"This is the way"', correct: true},
             
         ]
     },
