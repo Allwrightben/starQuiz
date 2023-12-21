@@ -1,5 +1,5 @@
 *,*::before, *::after {
-    box-sizing: border-box;
+    
     font-family: montserrat;
 }
 
@@ -7,7 +7,7 @@ body {
     background-image: url('../images/starbackground.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
+    align-items:center;
     vertical-align: auto;
     height: 100vh;
     width: 100vw;
@@ -50,9 +50,10 @@ body {
 
 .btn-grid {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .btn {
     background-color: lightblue;
@@ -61,6 +62,11 @@ body {
     box-shadow: 0 0 5px 1px;
     padding: 10px;
     font-weight: bolder;
+}
+
+#answer-buttons button {
+    padding: 2em;
+    font-size: 1rem;
 }
 
 .btn.correct {
@@ -104,6 +110,7 @@ body {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    font-size: 80%;
 }
 
 .hide {
@@ -114,4 +121,25 @@ body {
     color: whitesmoke;
     text-align: center;
     font-size: 10vh;
+}
+
+/* Media query for tablets and smaller */
+@media screen and (max-width: 768px) {
+
+    .container {
+        height: fit-content;
+        width: fit-content;
+        max-width: 90%;
+    }
+    
+    #answer-buttons button {
+        padding: 1em;
+    }
+
+    .header {
+        font-size: 3vh;
+    }
+    .rules {
+        top: 75%;        
+    }
 }
