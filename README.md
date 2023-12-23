@@ -113,8 +113,8 @@ In order to confirm the correct functionality, responsiveness and appearance:
   ![picture of the website being tested in Edge](assets\images\documentation/edge5.png)
 
 - The website was also tested using the Chrome extension [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?pli=1)
-  ![picture of responsive viewer on small devices](assets\images\documentation/responsiveviewer1.png)
-  ![picture of responsive viewer on larger devices](assets\images\documentation/responsiveviewer2.png) 
+    ![picture of responsive viewer on small devices](assets\images\documentation/responsiveviewer1.png)
+    ![picture of responsive viewer on larger devices](assets\images\documentation/responsiveviewer2.png) 
 
 - The website's responsiveness was tested using Media Genesis Responsive design checker
 https://responsivedesignchecker.com/
@@ -131,8 +131,12 @@ https://responsivedesignchecker.com/
 <br>
   ![Picture of CSS File page pass](assets/images/documentation/w3ccss.png)
 
+- The JavaScript was tested for errors using JShint
+<br>
+![Picture of JShint results](assets/images/documentation/jshint.png)
+
 - Lighthouse
-  - The website has been tested for perfomance, accessibility, best practice and SEO.<br>
+  - The website has been tested for performance, accessibility, best practice and SEO.<br>
 ![Picture of lighthouse analysis](assets/images/documentation/lighthouse.png)
     
 
@@ -141,37 +145,28 @@ https://responsivedesignchecker.com/
 ### Deployment to GitHub Pages
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the [GitHub repository](https://github.com/Allwrightben/money-pit), navigate to the Settings tab 
+  - In the [GitHub repository](https://github.com/Allwrightben/starquiz), navigate to the Settings tab 
   - From the source section drop-down menu, select the **Main** Branch, then click "Save".
   - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-  The live link can be found [here](https://allwrightben.github.io/money-pit/)
+  The live link can be found [here](https://allwrightben.github.io/starquiz/)
 
 ## Contact
 
 Ben Allwright<br>
 ben.allwright@learningpeople.co.uk
 
-Feel free to reach out if you have any questions or feedback! Thank you for visiting<br> https://allwrightben.github.io/money-pit/index.html
+Feel free to reach out if you have any questions or feedback! Thank you for visiting<br> https://github.com/Allwrightben/starquiz
 
 ## Credits
 
 - <h3>Inspiration</h3>
 
-  - The Love Running project gave me a lot of inspiration, particularly around
-  the Footer and signup form code.
-  - My mentors Alex and particularly Juliia have been amazing :)
+  - The Love Math project and JavaScript gave me a lot of inspiration.
+  - My mentor Juliia I must say has been amazing, far beyond what I would have expected :)
 
 - <h3>Media</h3>
 
-- all images on the website were sourced from the following places:
-
-  - https://wallpapercave.com  
-  - https://www.oakislandmoneypit.com  
-  - https://www.history.com/shows/the-curse-of-oak-island/articles/what-is-the-history-of-oak-island
-  - https://www.oakislandtreasure.co.uk/research-documents/excavations/triton-alliance-stock-certificate/
-  - https://themaritimeexplorer.ca/2014/08/26/oak-island/
-  - https://www.bigflix.com/the-curse-of-oak-island-season-12-release-date/
-  
+- The website features one background image sourced from https://unsplash.com/
 
 

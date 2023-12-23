@@ -1,33 +1,34 @@
-const startButton = document.getElementById('start-btn')
-const nextButton = document.getElementById('next-btn')
-const questionContainerElement = document.getElementById('question-container')
-const questionElement = document.getElementById('question')
-const answerButtonsElement = document.getElementById('answer-buttons')
+/* jshint esversion: 6 */
+const startButton = document.getElementById('start-btn');
+const nextButton = document.getElementById('next-btn');
+const questionContainerElement = document.getElementById('question-container');
+const questionElement = document.getElementById('question');
+const answerButtonsElement = document.getElementById('answer-buttons');
 const scoreArea = document.getElementById('scorearea');
-const openButton = document.querySelector("[data-open-modal]")
-const closeButton = document.querySelector("[data-close-modal]")
-const modal = document.querySelector("[data-modal]")
+const openButton = document.querySelector("[data-open-modal]");
+const closeButton = document.querySelector("[data-close-modal]");
+const modal = document.querySelector("[data-modal]");
 let totalQuestions;
 let score = 0;
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex;
 
 document.addEventListener("DOMContentLoaded", function () {
     
     //event listeners for the rules dialog box
     openButton.addEventListener('click', () => {
-        modal.showModal()
-    })
+        modal.showModal();
+    });
     closeButton.addEventListener('click', () => {
-        modal.close()
-    })
+        modal.close();
+    });
 
     //event listeners for the start and next buttons. 
-    startButton.addEventListener('click', startGame)
+    startButton.addEventListener('click', startGame);
     nextButton.addEventListener('click', () => {
-        currentQuestionIndex++
-        setNextQuestion() 
-    })
-})
+        currentQuestionIndex++;
+        setNextQuestion();
+    });
+});
 
 /**
  * The startGame function is responsible for starting the game. 
@@ -42,66 +43,66 @@ function startGame() {
     //sets number of questions left back to 10 and displays it
     totalQuestions = 10;
     document.getElementById('question-count').innerText = 'Questions left: ' + totalQuestions;
-    scoreArea.classList.remove('hide')
+    scoreArea.classList.remove('hide');
     //hides the start button after the game has started
-    startButton.classList.add('hide')
+    startButton.classList.add('hide');
     //shuffles through questions to make the quiz different everytime.
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     //give 10 random questions from available questions
-    shuffledQuestions = shuffledQuestions.slice(0, 10)
+    shuffledQuestions = shuffledQuestions.slice(0, 10);
     //set question index to 0
-    currentQuestionIndex = 0
+    currentQuestionIndex = 0;
     //displays questions after the game starts
-    questionContainerElement.classList.remove('hide')
+    questionContainerElement.classList.remove('hide');
     //chooses the 1st/next question
-    setNextQuestion()
+    setNextQuestion();
 }
 
 function setNextQuestion() {
     resetState();
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 function showQuestion(question) {
-    questionElement.innerText = question.question
+    questionElement.innerText = question.question;
     question.answers.forEach(answer => {
-        const button = document.createElement('button')
-        button.innerText = answer.text
-        button.classList.add('btn')
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener('click', selectAnswer)
-        answerButtonsElement.appendChild(button)
-    })
+        button.addEventListener('click', selectAnswer);
+        answerButtonsElement.appendChild(button);
+    });
 }
 
 function resetState() {
-    nextButton.classList.add('hide')
-    answerButtonsElement.classList.remove('disbtn')
+    nextButton.classList.add('hide');
+    answerButtonsElement.classList.remove('disbtn');
     while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 }
 
 function selectAnswer(e) {
-    const selectedButton = e.target
+    const selectedButton = e.target;
     totalQuestions--;
     document.getElementById('question-count').innerText = 'Questions left: ' + totalQuestions;
     Array.from(answerButtonsElement.children).forEach(button => {
-        answerButtonsElement.classList.add('disbtn')
+        answerButtonsElement.classList.add('disbtn');
     });
-    const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(document.body, correct);
     Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
+        setStatusClass(button, button.dataset.correct);
+    });
     if (correct) {
         score++;
         document.getElementById('score').innerText = 'Score: ' + score + '/10';
     }
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
-        nextButton.classList.remove('hide')
+        nextButton.classList.remove('hide');
     } else {
         if (score >= 8) {
             alert('Congratulations! You scored ' + score + ' out of 10. You did great!');
@@ -110,23 +111,23 @@ function selectAnswer(e) {
         } else {
             alert('You scored ' + score + ' out of 10. Better luck next time!');
         }
-        startButton.innerText = 'Restart'
-        startButton.classList.remove('hide')
+        startButton.innerText = 'Restart';
+        startButton.classList.remove('hide');
     }
 }
 
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     if (correct) {
-        element.classList.add('correct')
+        element.classList.add('correct');
     } else {
-        element.classList.add('wrong')
+        element.classList.add('wrong');
     }
 }
 
 function clearStatusClass(element) {
-    element.classList.remove('correct')
-    element.classList.remove('wrong')
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
 }
 
 let questions = [{
@@ -547,4 +548,4 @@ let questions = [{
 
         ]
     },
-]
+];
