@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- google font Montserrat -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
-        rel="stylesheet">
+    <!-- meta tags for search engines -->
+    <meta name="author" content="Ben Allwright">
+    <meta 
+    name="description" 
+    content="Star Wars quiz for fans to test their knowledge.">
+    <meta 
+    name="keywords" 
+    content="Star Wars Quiz. Star Quiz. Star Wars. Quiz.">
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
@@ -36,11 +37,11 @@
                 you will have 10 random questions to answer.<br>
                 you can score a total of 10 points.
 
-                <h4>
+                <h3>
                     The questions are diffrent everytime so feel free to try your luck again.
-                </h4>
+                </h3>
                 <h4>
-                    Press the CLOSE button on this box and then the START button to start the quiz
+                    Press the CLOSE button on this box and then the START button to start the quiz.
                 </h4>
                 
             </div>
@@ -50,7 +51,7 @@
 
         <section class="container">
             <div id="question-container" class="hide">
-                <div id="question">Question</div>
+                <h3 id="question">Question</h3>
                 <div id="answer-buttons" class="btn-grid">
                     <button class="btn">Answer 1</button>
                     <button class="btn">Answer 2</button>
@@ -64,7 +65,7 @@
                 <button id="next-btn" class="next-btn btn hide">Next</button>
             </div>
 
-            <div class= "score-area hide" id="scoreArea">
+            <div class= "score-area hide" id="scorearea">
                 <p id="score">Score: 0</p>
                 <div id="question-count">Questions left: 10</div>
             </div>

@@ -2,124 +2,92 @@
 
 ## Overview
 
-<p>Welcome to my website about the Oak Island Money Pit mystery! This README file provides essential information about the website, its purpose, and how to get started.</p>
+<p>Welcome to my web-game quiz about the Star Wars movie franchise ! This README file provides essential information about the website, its purpose, and how to get started.</p>
 
-The website can be accessed by this [Link](https://allwrightben.github.io/money-pit/)
+The website can be accessed by this [Link](https://allwrightben.github.io/starQuiz/)
 
 ## Introduction
 
-<p>This Oak Island Money Pit website will allow people to learn more about the mystery of Oak Island and why it has captivated the imaginations of explorers and historians alike for over two centuries. 
-The visitors to this website can quickly find key historic milestones in the mystery and sign up for a newsletter for updates as they happen.</p>
+<p>
+This Star Wars quiz game (Star Quiz) will allow star wars fans to test their knowlenge and maybe even learn something new. It's also great for non-Star Wars fans to see how they do even thugh they wouldn't consider themselves to be a big fan. Visitors to this website can quickly and easily start the game and since the questions are different every time they can try again and again and have a differnt experience each time
+</p>
 
 ## User Stories
 <h3>First Time Visitor Goals:</h3>
 
-- As a first-time visitor, I want to easily understand the main purpose of the site and what it provides.
-- As a first-time visitor, I want to easily navigate through the website.
-- As a first-time visitor, I want to quickly find the information I'm looking for.
+- As a first-time visitor, I want to easily understand the main purpose of the site and what it does.
+- As a first-time visitor, I want to easily navigate the controls of the game.
+- As a first-time visitor, I want to quickly start the game since that's what I'm here for.
 
 <h3>Returning Visitor Goals:</h3>
 
-- As a returning visitor, I want to see new information relating to the mystery.
-- As a returning visitor, I want to be able to see new updates and to find them easily.
-- As a returning visitor, I want to find community links, So I can learn more about the organisation and the validity of the information presented.
+- As a returning visitor, I want to try my luck again to see if I can improve my score.
+- As a returning visitor, I want to see the same familiar game layout so I can get straight into a new game.
+- As a returning visitor, I want to test my knowledge again but not have the exact same experience again otherwise I'll just memorise the questions.
 
 <h3>Frequent Visitor Goals:</h3>
 
-- As a frequent visitor, I want to check whether there are any recent discoveries with the mystery to stay as up-to-date as possible.
-- As a frequent visitor, I want to have options to be notified of any updates.
+- As a frequent visitor, I want to keep precticing to improve my knowledge and my score.
+- As a frequent visitor, I want get my friends to have a go aswell and see who gets the highest score.
+
 <h3>Target Audience Is:</h3>
 
-- Interested in history.
-- Interested in unsolved mysteries.
-- Interested in treasure hunting.
-- Interested in the Oak Island mystery.
+- Interested in Quizzes.
+- Interested in Star Wars.
+- Interested in learning about Star Wars.
+- Interested in fun.
 
 ## Features
 
-<h3>Navbar:</h3>
+<h3>The website exists on one page only with multiple features visible to the user:</h3>
 
-- Navigation
-  - Positioned at the top of the page.
-  - Contains the website name on the left side.
-  - Contains navigation links on the right side.
-    - HOME - Leads to the home page where they can learn about the mystery
-    - HISTORY - Leads to the history page where they can learn about the history of Oak Island.
-    - SIGN UP - Leads to the signup page where users can sign up for the newsletter to be notified of updates on the mystery.
-  - The links have an animated hover effect. 
-  - The navigation is clear and easy to understand for the user.  
-    ![Picture of Navbar](documentation/navbar.png)
-  - The navigation bar is responsive.
-  - On tablets the navigation bar makes better use of the space available on a smaller screen for a nicer-looking user experience.
-  ![Picture of Navbar for tablets](documentation/navbar-tablet.png)
-  - On mobile devices navigation bar will feature a logo on the left and a hamburger menu on the right.
-    ![Picture of Navbar for mobile devices](documentation/navbar-mobile-wide.png)
-  - When the hamburger menu is clicked, there is a dropdown menu, making for a more visually pleasing user experience.  
-    ![Picture of Navbar dropdown menu](documentation/navbar-dropdown.png)
+- At the top of the page, a Star Wars reference can be seen, which references the famous Alec Guinness quote "Mos Eisley, The most wretched hive of scum and villainy in all the galaxy".
+<br>
+![Picture of the top of the website](assets\images\documentation\starwarstop.png)
 
-- <h3>Home Page</h3>
-![picture of the top of the main page and hero image](documentation/mainresponsive.png)
+- At the bottom of the page, the name of the game (sTaR qUiZ) can be seen in large letters.
+<br>
+![Picture of the bottom of the website](assets\images\documentation\starwarsbottom.png)
 
-  - Represent
-    - The main purpose of the website.
-    - Description of the topic the website was made for.
-    - A question to fuel user interest in the mystery.
-    - invites to learn more about the history and to sign up for a newsletter.      
-      ![picture of the entire main page](documentation/hometablet.png)
-        
-  - Hero Section
-    - Hero section has a fixed background image of Oak Island.
-    - Hero section has a block section below that consists of two cards of information:
-      - One, with information relevant to the topic of the website as an overview.
-      - Two, with a "did you know" question to interest the user. The second card also features calls to action invites to learn more about the history or sign up for a newsletter. 
-      ![picture of the top of the main page and hero image](documentation/homepage-top.png)
+- In the middle of the page is a simple "Start" button for the user to start the game.<br>
+![Picture of the middle of the website](assets\images\documentation\starwarsmiddle.png)
 
-  - Under the information card features:
-    - An image from the history of Oak Island is relevant to the second card.
-    - A Google map to show the user where in the world the island is located.
-    ![picture of the bottom of the main page ](documentation/homepage-bottom.png)
-  - Footer
-    - Footer contains social media links that open in a new window.
-    
-      ![picture of the footer ](documentation/footer.png)
-    - Footer social media links will have an On-hover feedback feature.
-    ![picture of the footer ](documentation/footerhover.png)
-    
-- <h3>History Page</h3>
-![picture of the top of the main page and hero image](documentation/hisresponsive.png)
+- And in case the user is unsure of how a quiz works or the rules, there is a button to the right of the screen that will bring up a pop-up where they can quickly find out how it all works.
+<br>
+![Picture of the rules button to the right of the website](assets\images\documentation\starwarsright.png)
+![Picture of the rules](assets\images\documentation\rules.png)
 
-  - History page contains:
-    - A chronological list of milestone events relating the the Oak Island Money Pit mystery.
-    - each section is displayed on a card with an image on the left, the date prominently in the center, and information on the right.
-    ![picture of one of the history sections](documentation/history-sections.png)
-    - The History sections are also responsive for tablets.
-    
-      ![picture of one of the history sections](documentation/history-section-tablet.png)
-    - The History sections are also responsive for mobile.
-    
-      ![picture of one of the history sections](documentation/history-section-mobile.png)
+- When the user clicks start it will show the first question.
+- The user will also see their score in the bottom left.
+- The user will also see how many questions they have remaining in the bottom right
+<br>
+![Picture of the quiz started](assets\images\documentation\start.png)
 
-- <h3>Sign Up Page</h3>
-![picture of the top of the main page and hero image](documentation/signresponsive.png)
+- All of the buttons on the site offer the user feedback with on-hover animations and pointers.
+- within the quiz, the user will get instant feedback for a correct answer.
+- The user will also now only be able to click the next button as all the answer buttons are disabled.
+- The user will see that their score has increased by 1, and they now only have 9 questions remaining. 
+<br>
+![Picture of a correct answer](assets\images\documentation\next.png)
 
-  - Sign up page contains:
-    - A web form to sign up for a newsletter.
-    - First name, Last name and Email are required fields.
-    - Phone number is optional.
-    - The user can also choose how they would like to be contacted.
-    
-      ![picture of one of the signup page](documentation/signupform.png)
-    - Also features a response page.
-    
-      ![picture of one of the signup response page](documentation/submitredirect.png)
-    - Response page thanks the user and advises we will be in touch. 
-    - The response page will also take the user back to the main page after ten seconds so they can continue browsing.
+- The user will also get feedback for an incorrect answer.
+- the user will see that the answer they selected is now red, indicating that it was a wrong answer, and they didn't get a point and they have one less question to answer.
+<br>
+![Picture of a wrong answer](assets\images\documentation\wrong.png)
+
+- Each time the user selects one of four answers the correct answer will turn green and all other answers will be red.
+
+- Using the site is intuitive and easy to understand.
+- The website is responsive.
+  - on laptop screen sizes and larger, the website will feature larger text and buttons.
+  - on tablet screen sizes and smaller, the website text and buttons will be smaller.
 
 ## Technologies Used
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the foundation of the site.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/css) was used to add the styles and layout of the site.
 - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) was used to arrange items symmetrically on the pages.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) was used to create all the logic and visuals necessary to make the quiz work.
 - [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
 - [Git](https://git-scm.com/) was used for the version control of the website.
 - [GitHub](https://github.com/) was used to host the code of the website.
@@ -128,55 +96,46 @@ The visitors to this website can quickly find key historic milestones in the mys
 
 <h3>Compatability</h3>
 
-In order to confirm the correct functionality, responsivness and appearance:
+In order to confirm the correct functionality, responsiveness and appearance:
 - The website was tested on Chrome and Edge web browsers, using in-built dev tools.
   - Chrome:
-  ![picture of the website being tested in Chrome](documentation/chrome1.png)
-  ![picture of the website being tested in Chrome](documentation/chrome2.png)
-  ![picture of the website being tested in Chrome](documentation/chrome3.png)
-  ![picture of the website being tested in Chrome](documentation/chrome4.png)
-  ![picture of the website being tested in Chrome](documentation/chrome5.png)
+  ![picture of the website being tested in Chrome](assets\images\documentation\chrome1.png)
+  ![picture of the website being tested in Chrome](assets\images\documentation\chrome2.png)
+  ![picture of the website being tested in Chrome](assets\images\documentation\chrome3.png)
+  ![picture of the website being tested in Chrome](assets\images\documentation\chrome4.png)
+  ![picture of the website being tested in Chrome](assets\images\documentation\chrome5.png)
 
   - Edge:
-  ![picture of the website being tested in Edge](documentation/edge1.png)
-  ![picture of the website being tested in Edge](documentation/edge2.png)
-  ![picture of the website being tested in Edge](documentation/edge3.png)
-  ![picture of the website being tested in Edge](documentation/edge4.png)
-  ![picture of the website being tested in Edge](documentation/edge5.png)
+  ![picture of the website being tested in Edge](assets\images\documentation/edge1.png)
+  ![picture of the website being tested in Edge](assets\images\documentation/edge2.png)
+  ![picture of the website being tested in Edge](assets\images\documentation/edge3.png)
+  ![picture of the website being tested in Edge](assets\images\documentation/edge4.png)
+  ![picture of the website being tested in Edge](assets\images\documentation/edge5.png)
 
 - The website was also tested using the Chrome extension [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?pli=1)
-  ![picture of responsive viewer on main page](documentation/responsiveviewer2.png)
-  ![picture of responsive viewer on history page](documentation/responsiveviewer1.png)
-  ![picture of responsive viewer on signup page](documentation/responsiveviewer3.png) 
+  ![picture of responsive viewer on small devices](assets\images\documentation/responsiveviewer1.png)
+  ![picture of responsive viewer on larger devices](assets\images\documentation/responsiveviewer2.png) 
 
 - The website's responsiveness was tested using Media Genesis Responsive design checker
 https://responsivedesignchecker.com/
-![picture of the responisveness checker](documentation/responsivecheck.png)
-![picture of the responisveness checker](documentation/responsivecheck2.png)
-![picture of the responisveness checker](documentation/responsivecheck3.png)
+<br>
+![picture of the responisveness checker](assets/images/documentation/genesis1.png)
+![picture of the responisveness checker](assets/images/documentation/genesis2.png)
+![picture of the responisveness checker](assets/images/documentation/genesis3.png)
 
-- All HTML files have passed HTML validity checks with W3C.
-  - Main Page
-    ![Picture of main page HTML pass](documentation/htmlpass.png)
-  - History Page
-    ![Picture of history page HTML pass](documentation/hispass.png)
-  - Signup Page
-    ![Picture of signup page HTML pass](documentation/signpass.png)
-  - Submit Page
-    ![Picture of submit page HTML pass](documentation/subpass.png)
-  - The CSS file has also passed CSS validity check with W3C.
-    ![Picture of CSS File page pass](documentation/csspass.png)
+- The HTML file has passed HTML validity checks with W3C.
+<br>
+![Picture of main page HTML pass](assets/images/documentation/w3c.png)
+
+- The CSS file has also passed CSS validity check with W3C.
+<br>
+  ![Picture of CSS File page pass](assets/images/documentation/w3ccss.png)
 
 - Lighthouse
   - All pages have been tested for perfomance, accessibility, best practice and SEO.
     - Main Page
     ![Picture of CSS File page pass](documentation/lighthousemain.png)
-    - History page
-    ![Picture of CSS File page pass](documentation/lighthousehistory.png)
-    - Signup page
-    ![Picture of CSS File page pass](documentation/lighthousesignup.png)
-    - Submit Page
-    ![Picture of CSS File page pass](documentation/lighthousesubmit.png)
+    
 
 ## Deployment
 

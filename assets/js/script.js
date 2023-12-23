@@ -3,31 +3,29 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
-const scoreArea = document.getElementById('scoreArea');
+const scoreArea = document.getElementById('scorearea');
 const openButton = document.querySelector("[data-open-modal]")
 const closeButton = document.querySelector("[data-close-modal]")
 const modal = document.querySelector("[data-modal]")
-let totalQuestions = 10;
+let totalQuestions;
 let score = 0;
 let shuffledQuestions, currentQuestionIndex
 
 document.addEventListener("DOMContentLoaded", function () {
-
+    
+    //event listeners for the rules dialog box
     openButton.addEventListener('click', () => {
         modal.showModal()
     })
-
     closeButton.addEventListener('click', () => {
         modal.close()
     })
-
-
 
     //event listeners for the start and next buttons. 
     startButton.addEventListener('click', startGame)
     nextButton.addEventListener('click', () => {
         currentQuestionIndex++
-        setNextQuestion()
+        setNextQuestion() 
     })
 })
 
@@ -60,7 +58,7 @@ function startGame() {
 }
 
 function setNextQuestion() {
-    resetState()
+    resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
