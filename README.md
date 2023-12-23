@@ -132,9 +132,8 @@ https://responsivedesignchecker.com/
   ![Picture of CSS File page pass](assets/images/documentation/w3ccss.png)
 
 - Lighthouse
-  - All pages have been tested for perfomance, accessibility, best practice and SEO.
-    - Main Page
-    ![Picture of CSS File page pass](documentation/lighthousemain.png)
+  - The website has been tested for perfomance, accessibility, best practice and SEO.<br>
+![Picture of lighthouse analysis](assets/images/documentation/lighthouse.png)
     
 
 ## Deployment
