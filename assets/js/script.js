@@ -12,18 +12,21 @@ let totalQuestions;
 let score = 0;
 let shuffledQuestions, currentQuestionIndex;
 
+// Event listener for DOMContentLoaded
 document.addEventListener("DOMContentLoaded", function () {
     
-    //event listeners for the rules dialog box
+    // Event listener for opening the rules dialog box
     openButton.addEventListener('click', () => {
         modal.showModal();
     });
+    // Event listener for closing the rules dialog box
     closeButton.addEventListener('click', () => {
         modal.close();
     });
 
-    //event listeners for the start and next buttons. 
+    // Event listener for the start button 
     startButton.addEventListener('click', startGame);
+    // Event listener for the next button
     nextButton.addEventListener('click', () => {
         currentQuestionIndex++;
         setNextQuestion();
@@ -37,32 +40,35 @@ document.addEventListener("DOMContentLoaded", function () {
  * and sets the next question.
  */
 function startGame() {
-    //sets score to 0 and desplays it
+    // sets score to 0 and desplays it
     score = 0;
     document.getElementById('score').innerText = 'Score:' + score;
-    //sets number of questions left back to 10 and displays it
+    // Sets number of questions left back to 10 and displays it
     totalQuestions = 10;
     document.getElementById('question-count').innerText = 'Questions left: ' + totalQuestions;
+    // Shows the score area
     scoreArea.classList.remove('hide');
-    //hides the start button after the game has started
+    // Hides the start button after the game has started
     startButton.classList.add('hide');
-    //shuffles through questions to make the quiz different everytime.
+    // Shuffles through questions to make the quiz different everytime.
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-    //give 10 random questions from available questions
+    // Gives 10 random questions from available questions
     shuffledQuestions = shuffledQuestions.slice(0, 10);
-    //set question index to 0
+    // Sets question index to 0
     currentQuestionIndex = 0;
-    //displays questions after the game starts
+    // Displays questions after the game starts
     questionContainerElement.classList.remove('hide');
-    //chooses the 1st/next question
+    // Chooses the 1st/next question
     setNextQuestion();
 }
 
+// Function to set the next question
 function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
+// Function to display a question
 function showQuestion(question) {
     questionElement.innerText = question.question;
     question.answers.forEach(answer => {
@@ -72,11 +78,13 @@ function showQuestion(question) {
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
+        // Event listener for selecting an answer
         button.addEventListener('click', selectAnswer);
         answerButtonsElement.appendChild(button);
     });
 }
 
+// Function to reset the state
 function resetState() {
     nextButton.classList.add('hide');
     answerButtonsElement.classList.remove('disbtn');
@@ -85,6 +93,7 @@ function resetState() {
     }
 }
 
+// Function to handle answer selection
 function selectAnswer(e) {
     const selectedButton = e.target;
     totalQuestions--;
@@ -116,6 +125,7 @@ function selectAnswer(e) {
     }
 }
 
+// Function to set status class
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -125,11 +135,13 @@ function setStatusClass(element, correct) {
     }
 }
 
+// Function to clear set status class
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
 
+//A All quiz question
 let questions = [{
         question: 'Where was Darth Vader born?',
         answers: [{
