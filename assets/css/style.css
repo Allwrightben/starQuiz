@@ -33,7 +33,7 @@ body {
 .container {
     height: fit-content;
     width: 90%;
-    max-width: 900px;
+    max-width: 600px;
     border-radius: 50px;
     background-color: whitesmoke;
     box-shadow: 0 0 10px 2px;

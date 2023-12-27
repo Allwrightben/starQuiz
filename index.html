@@ -22,13 +22,14 @@
 
 <body>
     <header>
+        <!-- Star Wars refference top of page -->
         <h1 class="header">
             The most wretched quiz of scum and villainy in all the galaxy.
         </h1>
     </header>
 
     <main>
-
+        <!-- Button to open modal -->
         <button data-open-modal class="rules btn">??</button>
         <dialog data-modal>
             <div>
@@ -45,10 +46,11 @@
                 </h4>
                 
             </div>
-
+            <!-- Button to close modal -->
             <button data-close-modal>Close</button>
         </dialog>
-
+        
+        <!-- Game container -->
         <section class="container">
             <div id="question-container" class="hide">
                 <h3 id="question">Question</h3>
@@ -69,12 +71,13 @@
                 <p id="score">Score: 0</p>
                 <div id="question-count">Questions left: 10</div>
             </div>
-
         </section>
     </main>
 
+    <!-- Quiz name bottom of page  -->
     <footer class="starquiz">sTaR qUiz</footer>
-
+    
+    <!-- JavaScript link at bottom of body so everything loads first -->
     <script src="assets/js/script.js"></script>
 </body>
 

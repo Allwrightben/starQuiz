@@ -2,14 +2,14 @@
 
 ## Overview
 
-<p>Welcome to my web-game quiz about the Star Wars movie franchise ! This README file provides essential information about the website, its purpose, and how to get started.</p>
+<p>Welcome to my web game quiz about the Star Wars movie franchise! This README file provides essential information about the website, its purpose, and how to get started.</p>
 
 The website can be accessed by this [Link](https://allwrightben.github.io/starQuiz/)
 
 ## Introduction
 
 <p>
-This Star Wars quiz game (Star Quiz) will allow star wars fans to test their knowlenge and maybe even learn something new. It's also great for non-Star Wars fans to see how they do even thugh they wouldn't consider themselves to be a big fan. Visitors to this website can quickly and easily start the game and since the questions are different every time they can try again and again and have a differnt experience each time
+This Star Wars quiz game (Star Quiz) will allow Star Wars fans to test their knowledge and maybe even learn something new. It's also great for non-Star Wars fans to see how they do even though they wouldn't consider themselves to be a big fan. Visitors to this website can quickly and easily start the game and since the questions are different every time they can try again and again and have a different experience each time
 </p>
 
 ## User Stories
@@ -23,12 +23,12 @@ This Star Wars quiz game (Star Quiz) will allow star wars fans to test their kno
 
 - As a returning visitor, I want to try my luck again to see if I can improve my score.
 - As a returning visitor, I want to see the same familiar game layout so I can get straight into a new game.
-- As a returning visitor, I want to test my knowledge again but not have the exact same experience again otherwise I'll just memorise the questions.
+- As a returning visitor, I want to test my knowledge again but not have the exact same experience again otherwise I'll just memorize the questions.
 
 <h3>Frequent Visitor Goals:</h3>
 
-- As a frequent visitor, I want to keep precticing to improve my knowledge and my score.
-- As a frequent visitor, I want get my friends to have a go aswell and see who gets the highest score.
+- As a frequent visitor, I want to keep practicing to improve my knowledge and my score.
+- As a frequent visitor, I want to get my friends to have a go as well and see who gets the highest score.
 
 <h3>Target Audience Is:</h3>
 
@@ -43,37 +43,37 @@ This Star Wars quiz game (Star Quiz) will allow star wars fans to test their kno
 
 - At the top of the page, a Star Wars reference can be seen, which references the famous Alec Guinness quote "Mos Eisley, The most wretched hive of scum and villainy in all the galaxy".
 <br>
-![Picture of the top of the website](assets\images\documentation\starwarstop.png)
+![Picture of the top of the website](assets/images/documentation/starwarstop.png)
 
 - At the bottom of the page, the name of the game (sTaR qUiZ) can be seen in large letters.
 <br>
-![Picture of the bottom of the website](assets\images\documentation\starwarsbottom.png)
+![Picture of the bottom of the website](assets/images/documentation/starwarsbottom.png)
 
 - In the middle of the page is a simple "Start" button for the user to start the game.<br>
-![Picture of the middle of the website](assets\images\documentation\starwarsmiddle.png)
+![Picture of the middle of the website](assets/images/documentation/starwarsmiddle.png)
 
 - And in case the user is unsure of how a quiz works or the rules, there is a button to the right of the screen that will bring up a pop-up where they can quickly find out how it all works.
 <br>
-![Picture of the rules button to the right of the website](assets\images\documentation\starwarsright.png)
-![Picture of the rules](assets\images\documentation\rules.png)
+![Picture of the rules button to the right of the website](assets/images/documentation/starwarsright.png)
+![Picture of the rules](assets/images/documentation/rules.png)
 
 - When the user clicks start it will show the first question.
 - The user will also see their score in the bottom left.
 - The user will also see how many questions they have remaining in the bottom right
 <br>
-![Picture of the quiz started](assets\images\documentation\start.png)
+![Picture of the quiz started](assets/images/documentation/start.png)
 
 - All of the buttons on the site offer the user feedback with on-hover animations and pointers.
 - within the quiz, the user will get instant feedback for a correct answer.
 - The user will also now only be able to click the next button as all the answer buttons are disabled.
 - The user will see that their score has increased by 1, and they now only have 9 questions remaining. 
 <br>
-![Picture of a correct answer](assets\images\documentation\next.png)
+![Picture of a correct answer](assets/images/documentation/next.png)
 
 - The user will also get feedback for an incorrect answer.
 - the user will see that the answer they selected is now red, indicating that it was a wrong answer, and they didn't get a point and they have one less question to answer.
 <br>
-![Picture of a wrong answer](assets\images\documentation\wrong.png)
+![Picture of a wrong answer](assets/images/documentation/wrong.png)
 
 - Each time the user selects one of four answers the correct answer will turn green and all other answers will be red.
 
@@ -99,22 +99,22 @@ This Star Wars quiz game (Star Quiz) will allow star wars fans to test their kno
 In order to confirm the correct functionality, responsiveness and appearance:
 - The website was tested on Chrome and Edge web browsers, using in-built dev tools.
   - Chrome:
-  ![picture of the website being tested in Chrome](assets\images\documentation\chrome1.png)
-  ![picture of the website being tested in Chrome](assets\images\documentation\chrome2.png)
-  ![picture of the website being tested in Chrome](assets\images\documentation\chrome3.png)
-  ![picture of the website being tested in Chrome](assets\images\documentation\chrome4.png)
-  ![picture of the website being tested in Chrome](assets\images\documentation\chrome5.png)
+  ![picture of the website being tested in Chrome](assets/images/documentation/chrome1.png)
+  ![picture of the website being tested in Chrome](assets/images/documentation/chrome2.png)
+  ![picture of the website being tested in Chrome](assets/images/documentation/chrome3.png)
+  ![picture of the website being tested in Chrome](assets/images/documentation/chrome4.png)
+  ![picture of the website being tested in Chrome](assets/images/documentation/chrome5.png)
 
   - Edge:
-  ![picture of the website being tested in Edge](assets\images\documentation/edge1.png)
-  ![picture of the website being tested in Edge](assets\images\documentation/edge2.png)
-  ![picture of the website being tested in Edge](assets\images\documentation/edge3.png)
-  ![picture of the website being tested in Edge](assets\images\documentation/edge4.png)
-  ![picture of the website being tested in Edge](assets\images\documentation/edge5.png)
+  ![picture of the website being tested in Edge](assets/images/documentation/edge1.png)
+  ![picture of the website being tested in Edge](assets/images/documentation/edge2.png)
+  ![picture of the website being tested in Edge](assets/images/documentation/edge3.png)
+  ![picture of the website being tested in Edge](assets/images/documentation/edge4.png)
+  ![picture of the website being tested in Edge](assets/images/documentation/edge5.png)
 
 - The website was also tested using the Chrome extension [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?pli=1)
-    ![picture of responsive viewer on small devices](assets\images\documentation/responsiveviewer1.png)
-    ![picture of responsive viewer on larger devices](assets\images\documentation/responsiveviewer2.png) 
+    ![picture of responsive viewer on small devices](assets/images/documentation/responsiveviewer1.png)
+    ![picture of responsive viewer on larger devices](assets/images/documentation/responsiveviewer2.png) 
 
 - The website's responsiveness was tested using Media Genesis Responsive design checker
 https://responsivedesignchecker.com/
@@ -162,7 +162,7 @@ Feel free to reach out if you have any questions or feedback! Thank you for visi
 
 - <h3>Inspiration</h3>
 
-  - The Love Math project and JavaScript gave me a lot of inspiration.
+  - The Love Math project and JavaScript modules gave me a lot of inspiration.
   - My mentor Juliia I must say has been amazing, far beyond what I would have expected :)
 
 - <h3>Media</h3>
