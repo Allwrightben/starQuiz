@@ -127,24 +127,31 @@ In order to confirm the correct functionality, responsiveness and appearance:
 - The website's responsiveness was tested using Media Genesis Responsive design checker
 https://responsivedesignchecker.com/
 <br>
+
 ![picture of the responisveness checker](assets/images/documentation/genesis1.png)
+
 ![picture of the responisveness checker](assets/images/documentation/genesis2.png)
+
 ![picture of the responisveness checker](assets/images/documentation/genesis3.png)
 
 - The HTML file has passed HTML validity checks with W3C.
 <br>
+
 ![Picture of main page HTML pass](assets/images/documentation/w3c.png)
 
 - The CSS file has also passed CSS validity check with W3C.
 <br>
-  ![Picture of CSS File page pass](assets/images/documentation/w3ccss.png)
+
+![Picture of CSS File page pass](assets/images/documentation/w3ccss.png)
 
 - The JavaScript was tested for errors using JShint
 <br>
+
 ![Picture of JShint results](assets/images/documentation/jshint.png)
 
 - Lighthouse
   - The website has been tested for performance, accessibility, best practice and SEO.<br>
+
 ![Picture of lighthouse analysis](assets/images/documentation/lighthouse.png)
     
 
