@@ -1,10 +1,10 @@
-![picture of the top of the main page and hero image](documentation/mainresponsive.png)
+![picture of the website in a responsive context](assets/images/documentation/mainresponsive.png)
 
 ## Overview
 
 <p>Welcome to my web game quiz about the Star Wars movie franchise! This README file provides essential information about the website, its purpose, and how to get started.</p>
 
-The website can be accessed by this [Link](https://allwrightben.github.io/starQuiz/)
+The website can be accessed by this [Link](https://allwrightben.github.io/starquiz/)
 
 ## Introduction
 
